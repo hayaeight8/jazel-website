@@ -1976,3 +1976,37 @@ a {
         font-size: 6.2px;
     }
 }
+/* =========================================
+   SCROLL ANIMATIONS
+========================================= */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.75s ease,
+        transform 0.75s ease;
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* الصور تدخل بنعومة */
+.scroll-reveal img {
+    transition: transform 0.9s ease;
+}
+
+.scroll-reveal.is-visible img {
+    transform: scale(1);
+}
+
+/* احترام إعداد تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

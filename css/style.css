@@ -594,3 +594,298 @@ a { color: inherit; }
     .footer-nav a { font-size:14px; }
     .footer-contact span, .footer-contact a, .footer-bottom p { font-size:13px; }
 }
+
+
+/* ==================================================
+   HEADER + FOOTER FIX
+   ================================================== */
+
+/* حماية من أي عرض زائد */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+
+.navbar,
+.page-navbar {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* الهيدر الداخلي */
+.page-header {
+    width: 100%;
+    max-width: 100%;
+    height: 125px;
+    overflow: hidden;
+}
+
+/* ================= FOOTER ================= */
+
+.main-footer {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.footer-top,
+.footer-nav,
+.footer-bottom {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   MOBILE
+   ================================================== */
+
+@media (max-width: 600px) {
+
+    /* ---------- HOME HEADER ---------- */
+
+    .navbar {
+        top: 20px;
+        right: 18px;
+        left: 18px;
+        width: auto;
+
+        display: flex;
+        align-items: center;
+
+        padding-bottom: 10px;
+    }
+
+    .brand {
+        margin-left: 12px;
+        flex-shrink: 0;
+    }
+
+    .brand img {
+        width: 58px;
+        height: auto;
+    }
+
+    .nav-links {
+        min-width: 0;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        font-size: 8px;
+        white-space: nowrap;
+    }
+
+
+    /* ---------- INNER PAGE HEADER ---------- */
+
+    .page-header {
+        height: 115px;
+    }
+
+    .page-navbar {
+        padding: 20px 18px 0;
+    }
+
+    .page-logo {
+        margin-left: 12px;
+        flex-shrink: 0;
+    }
+
+    .page-logo img {
+        width: 58px;
+    }
+
+    .page-nav-links {
+        min-width: 0;
+        gap: 5px;
+    }
+
+    .page-nav-links a {
+        font-size: 8px;
+        white-space: nowrap;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .main-footer {
+        min-height: auto;
+        padding: 32px 20px 24px;
+    }
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 75px minmax(0, 1fr);
+        column-gap: 18px;
+        align-items: center;
+    }
+
+    .footer-brand {
+        width: 75px;
+    }
+
+    .footer-brand > img {
+        width: 62px;
+        margin: 0 0 10px auto;
+    }
+
+    .footer-contact {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .footer-contact span {
+        font-size: 9px;
+    }
+
+    .footer-contact a {
+        font-size: 11px;
+    }
+
+    .footer-nav {
+        min-width: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 5px;
+    }
+
+    .footer-nav a {
+        font-size: 8px;
+        white-space: nowrap;
+    }
+
+    .footer-divider {
+        margin: 28px 0 18px;
+    }
+
+    .footer-bottom {
+        gap: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 8px;
+        line-height: 1.6;
+    }
+
+    .footer-social {
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+    .footer-social a {
+        font-size: 12px;
+    }
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+   ================================================== */
+
+@media (max-width: 360px) {
+
+    .navbar {
+        right: 12px;
+        left: 12px;
+    }
+
+    .brand {
+        margin-left: 8px;
+    }
+
+    .brand img,
+    .page-logo img {
+        width: 50px;
+    }
+
+    .nav-links a,
+    .page-nav-links a {
+        font-size: 7px;
+    }
+
+    .nav-links,
+    .page-nav-links {
+        gap: 3px;
+    }
+
+    .page-navbar {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .page-logo {
+        margin-left: 8px;
+    }
+
+    .main-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-nav a {
+        font-size: 7px;
+    }
+}
+
+
+/* ==================================================
+   TABLET / IPAD
+   ================================================== */
+
+@media (min-width: 601px) and (max-width: 1100px) {
+
+    .navbar {
+        right: 28px;
+        left: 28px;
+    }
+
+    .brand img {
+        width: 75px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .page-navbar {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .page-logo img {
+        width: 72px;
+    }
+
+    .page-nav-links a {
+        font-size: 12px;
+    }
+
+    .main-footer {
+        padding: 40px 32px 28px;
+    }
+
+    .footer-nav a {
+        font-size: 11px;
+    }
+
+    .footer-contact span,
+    .footer-bottom p {
+        font-size: 10px;
+    }
+
+    .footer-contact a,
+    .footer-social a {
+        font-size: 13px;
+    }
+}

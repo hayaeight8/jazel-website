@@ -571,6 +571,8 @@ a {
     }
 }
 
+/* ========================= WORKS HOME ========================= */
+
 .featured-works {
     padding: 60px 42px 78px;
     background: #000;
@@ -666,72 +668,6 @@ a {
 .inside-jazel {
     grid-column: 1;
 }
-/* الصور داخل أبرز الأعمال */
-.work-image {
-    width: 100%;
-    aspect-ratio: 0.88 / 1;
-    background: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.work-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-/* الجوال أولًا */
-@media (max-width: 600px) {
-    .featured-works {
-        padding: 36px 16px 44px;
-    }
-
-    .works-title {
-        margin-bottom: 30px;
-    }
-
-    .works-title h2 {
-        font-size: 27px;
-    }
-
-    .works-grid {
-        grid-template-columns: 1fr;
-        gap: 28px;
-    }
-
-    .work-item {
-        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-        column-gap: 14px;
-        align-items: center;
-    }
-
-    .work-image {
-        width: 100%;
-        aspect-ratio: 0.88 / 1;
-    }
-
-    .work-text h3 {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    .work-text p {
-        font-size: 11px;
-        line-height: 1.8;
-    }
-
-    .work-text a {
-        font-size: 10px;
-    }
-
-    .inside-jazel {
-        grid-column: auto;
-    }
-}
-
 /* ========================= JOIN HOME ========================= */
 
 .join-us {

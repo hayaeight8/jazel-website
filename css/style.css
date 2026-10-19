@@ -668,6 +668,18 @@ a {
 .inside-jazel {
     grid-column: 1;
 }
+/* الصور داخل إطارات الأعمال */
+.work-image {
+    overflow: hidden;
+}
+
+.work-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 /* ========================= JOIN HOME ========================= */
 
 .join-us {

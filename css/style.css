@@ -371,18 +371,25 @@ a {
 
 /* ========================= HUMANITY HOME ========================= */
 
+/* ================================
+   JAZEL HUMANITY
+================================ */
+
 .humanity {
     min-height: 430px;
     padding: 55px 42px 65px;
     background: #fff;
     color: #000;
+
     display: grid;
-    grid-template-columns: .78fr 1.45fr;
+    grid-template-columns: 0.78fr 1.45fr;
     column-gap: 42px;
     align-items: center;
+
     direction: ltr;
 }
 
+/* الصورة */
 .humanity-media {
     min-width: 0;
     grid-column: 1;
@@ -392,19 +399,30 @@ a {
 .humanity-image {
     width: 100%;
     height: 210px;
-    background: #000;
-    border-radius: 4px;
+    overflow: hidden;
+    background: #f5f3ef;
+    border-radius: 6px;
+}
+
+.humanity-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .humanity-more {
     display: block;
     margin-top: 8px;
+
     color: #000;
     text-decoration: none;
     font-size: 11px;
     text-align: right;
 }
 
+/* المحتوى */
 .humanity-content {
     min-width: 0;
     grid-column: 2;
@@ -437,16 +455,121 @@ a {
     flex: 1;
     max-width: 105px;
     height: 1px;
-    background: rgba(0,0,0,.42);
+    background: rgba(0, 0, 0, 0.42);
 }
 
 .humanity-description {
     margin: 0;
     font-size: 14px;
     line-height: 1.9;
-    color: rgba(0,0,0,.88);
+    color: rgba(0, 0, 0, 0.88);
 }
 
+
+/* ================================
+   TABLET
+================================ */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .humanity {
+        min-height: auto;
+        padding: 45px 28px;
+        grid-template-columns: 0.85fr 1.15fr;
+        column-gap: 28px;
+    }
+
+    .humanity-image {
+        height: 230px;
+    }
+
+    .humanity-content h2 {
+        font-size: 28px;
+    }
+
+    .humanity-description {
+        font-size: 14px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+    .humanity {
+        min-height: auto;
+        padding: 40px 20px 45px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+
+        direction: rtl;
+    }
+
+    /* النص أولًا */
+    .humanity-content {
+        width: 100%;
+        min-width: 0;
+        order: 1;
+        text-align: right;
+    }
+
+    .humanity-content h2 {
+        margin-bottom: 10px;
+        font-size: clamp(27px, 7vw, 32px);
+        line-height: 1.4;
+    }
+
+    .humanity-subtitle {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .humanity-subtitle p {
+        font-size: 12px;
+    }
+
+    .humanity-subtitle span {
+        max-width: 85px;
+    }
+
+    .humanity-description {
+        font-size: 14px;
+        line-height: 2;
+        overflow-wrap: anywhere;
+    }
+
+    /* الصورة بعد النص */
+    .humanity-media {
+        width: 100%;
+        min-width: 0;
+        grid-column: auto;
+        order: 2;
+    }
+
+    .humanity-image {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .humanity-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .humanity-more {
+        margin-top: 10px;
+        font-size: 12px;
+        text-align: right;
+    }
+}
 
 /* Featured Works */
 .featured-works {

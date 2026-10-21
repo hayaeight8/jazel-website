@@ -1025,9 +1025,19 @@ a {
 
 .about-intro-image {
     width: 100%;
-    height: 245px;
+    height: 300px;
+    min-width: 0;
+    overflow: hidden;
     background: #fff;
     border-radius: 5px;
+}
+
+.about-intro-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .about-story {
@@ -1047,9 +1057,19 @@ a {
 
 .about-story-image {
     width: 100%;
-    height: 245px;
+    height: 300px;
+    min-width: 0;
+    overflow: hidden;
     background: #000;
     border-radius: 5px;
+}
+
+.about-story-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .about-small-title {
@@ -1918,7 +1938,7 @@ a {
 
     .about-intro-image,
     .about-story-image {
-        height: 225px;
+        height: 250px;
     }
 
     .about-story {

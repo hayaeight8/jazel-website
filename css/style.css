@@ -2231,7 +2231,25 @@ a {
     line-height: 1.9;
 }
 
-.humanity-page-image,
+
+/* صور صفحة جازل الإنسانية */
+.humanity-page-image {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    background: transparent;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.humanity-page-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* صورة المبادرة الثانية - تبقى كما هي */
 .initiative-image {
     width: 100%;
     height: 230px;
@@ -2241,8 +2259,6 @@ a {
     overflow: hidden;
 }
 
-/* الصور تظهر داخل الإطار عند إضافتها */
-.humanity-page-image img,
 .initiative-image img {
     display: block;
     width: 100%;
@@ -2346,7 +2362,7 @@ a {
         padding-inline: 32px;
     }
 
-    .humanity-page-image,
+    
     .initiative-image {
         height: 220px;
     }
@@ -2361,12 +2377,17 @@ a {
         padding: 45px 24px 55px;
     }
 
-    .humanity-page-image,
-    .initiative-image {
-        grid-column: 1;
-        grid-row: auto;
-        height: 210px;
-    }
+   .humanity-page-image {
+    grid-column: 1;
+    grid-row: auto;
+    height: auto;
+}
+
+.initiative-image {
+    grid-column: 1;
+    grid-row: auto;
+    height: 210px;
+}
 
     .humanity-page-content h1 {
         font-size: 29px;

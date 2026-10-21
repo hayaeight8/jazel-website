@@ -2427,11 +2427,14 @@ a {
 
 
 /* صورة شعارات العملاء الموحدة تجربه */
+
+/* خلفية صورة شعارات العملاء */
 .clients-single-image {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
     padding: 30px 42px;
+    background-color: #080808;
 }
 
 .clients-single-image img {
@@ -2446,3 +2449,4 @@ a {
         padding: 20px 16px;
     }
 }
+

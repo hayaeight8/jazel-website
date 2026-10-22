@@ -1030,7 +1030,7 @@ a {
     overflow: hidden;
     background: transparent;
     border: none;
-    border-radius: 0;
+     border-radius: 5px;
 }
 
 .about-intro-image img {
@@ -1040,6 +1040,7 @@ a {
     object-fit: contain;
     object-position: center;
     border: none;
+     border-radius: 5px;
 }
 
 .about-story {
@@ -1064,7 +1065,7 @@ a {
     overflow: hidden;
     background: transparent;
     border: none;
-    border-radius: 0;
+    border-radius: 5px;
 }
 
 .about-story-image img {
@@ -1074,6 +1075,7 @@ a {
     object-fit: contain;
     object-position: center;
     border: none;
+     border-radius: 5px;
 }
 .about-small-title {
     display: block;

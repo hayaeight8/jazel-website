@@ -1439,10 +1439,19 @@ a {
 .join-intro-image {
     width: 100%;
     height: 235px;
-    background: #fff;
-    border-radius: 4px;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    border-radius: 0;
 }
 
+.join-intro-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
 .join-looking {
     padding: 65px 42px 75px;
     background: #fff;

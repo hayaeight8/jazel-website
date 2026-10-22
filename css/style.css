@@ -1028,8 +1028,9 @@ a {
     height: 300px;
     min-width: 0;
     overflow: hidden;
-    background: #fff;
-    border-radius: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
 }
 
 .about-intro-image img {
@@ -1038,6 +1039,7 @@ a {
     height: 100%;
     object-fit: contain;
     object-position: center;
+    border: none;
 }
 
 .about-story {
@@ -1060,8 +1062,9 @@ a {
     height: 300px;
     min-width: 0;
     overflow: hidden;
-    background: #000;
-    border-radius: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
 }
 
 .about-story-image img {
@@ -1070,8 +1073,8 @@ a {
     height: 100%;
     object-fit: contain;
     object-position: center;
+    border: none;
 }
-
 .about-small-title {
     display: block;
     margin-bottom: 16px;

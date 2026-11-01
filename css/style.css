@@ -1,6 +1,6 @@
 /* =========================================================
-   JAZEL — CLEAN RESPONSIVE STYLE
-   Replace the current css/style.css with this whole file.
+  css موقع وكاله جازل
+يشمل استجابه الاجهزه
    ========================================================= */
 
 * {
@@ -171,7 +171,7 @@ a {
     color: rgba(255,255,255,.9);
 }
 
-/* ========================= ABOUT HOME ========================= */
+/* ========================= عنا الرئيسيه ========================= */
 
 .about {
     min-height: 430px;
@@ -243,7 +243,7 @@ a {
     color: rgba(255,255,255,.88);
 }
 
-/* ========================= CLIENTS HOME ========================= */
+/* ========================= العملاء الرئيسيه ========================= */
 
 .clients {
     padding: 0 42px 70px;
@@ -291,7 +291,7 @@ a {
     margin-top: 45px;
 }
 
-/* ========================= SHARED TITLE ========================= */
+/* ========================= عنوان مسترك========================= */
 
 .section-title {
     width: 100%;
@@ -313,7 +313,7 @@ a {
     height: 1px;
 }
 
-/* ========================= NEWS HOME ========================= */
+/* ========================= الاخبار الرئيسيه ========================= */
 
 .news-preview {
     min-height: 430px;
@@ -369,11 +369,8 @@ a {
     line-height: 1.5;
 }
 
-/* ========================= HUMANITY HOME ========================= */
+/* ========================= الانسانيه الرئيسيه ========================= */
 
-/* ================================
-   JAZEL HUMANITY
-================================ */
 
 .humanity {
     min-height: 430px;
@@ -389,7 +386,6 @@ a {
     direction: ltr;
 }
 
-/* الصورة */
 .humanity-media {
     min-width: 0;
     grid-column: 1;
@@ -422,7 +418,7 @@ a {
     text-align: right;
 }
 
-/* المحتوى */
+
 .humanity-content {
     min-width: 0;
     grid-column: 2;
@@ -467,7 +463,7 @@ a {
 
 
 /* ================================
-   TABLET
+   حجم ايباد وتابلت
 ================================ */
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -493,7 +489,7 @@ a {
 
 
 /* ================================
-   MOBILE
+   جوال
 ================================ */
 
 @media (max-width: 600px) {
@@ -509,7 +505,7 @@ a {
         direction: rtl;
     }
 
-    /* النص أولًا */
+    
     .humanity-content {
         width: 100%;
         min-width: 0;
@@ -542,7 +538,7 @@ a {
         overflow-wrap: anywhere;
     }
 
-    /* الصورة بعد النص */
+  
     .humanity-media {
         width: 100%;
         min-width: 0;
@@ -571,7 +567,7 @@ a {
     }
 }
 
-/* ========================= WORKS HOME ========================= */
+/* ========================= امالنا الرئيسيه ========================= */
 
 .featured-works {
     padding: 60px 42px 78px;
@@ -668,7 +664,6 @@ a {
 .inside-jazel {
     grid-column: 1;
 }
-/* الصور داخل إطارات الأعمال */
 .work-image {
     overflow: hidden;
 }
@@ -680,7 +675,7 @@ a {
     object-fit: cover;
     object-position: center;
 }
-/* ========================= JOIN HOME ========================= */
+/* ========================= الانضمام الرئيسيه ========================= */
 
 .join-us {
     min-height: 390px;
@@ -742,7 +737,7 @@ a {
     font-weight: 600;
 }
 
-/* ========================= SERVICES CTA HOME ========================= */
+/* ========================= الخدمات الرئيسيه ========================= */
 
 .services-cta {
     min-height: 335px;
@@ -1213,7 +1208,7 @@ a {
     line-height: 1.3;
 }
 
-/* clients page */
+/* صفحه العملاء */
 
 .clients-intro,
 .news-page-intro,
@@ -1320,7 +1315,7 @@ a {
     color: rgba(255,255,255,.65);
 }
 
-/* news / works pages */
+/* الاخبار / الاعمال */
 
 .news-article,
 .work-section {
@@ -1399,7 +1394,7 @@ a {
     scroll-margin-top: 125px;
 }
 
-/* join page */
+/* الانضمام */
 
 .join-intro {
     padding: 65px 42px 70px;
@@ -1484,7 +1479,7 @@ a {
     margin-bottom: 30px;
 }
 
-/* services page */
+/* خدماتنا */
 
 .services-intro {
     padding-bottom: 60px;
@@ -1534,7 +1529,7 @@ a {
     font-size: 15px;
 }
 
-/* contact */
+/* التواصل */
 
 .contact-strip {
     padding: 65px 42px 70px;
@@ -1600,7 +1595,7 @@ a {
     font-size: 14px;
 }
 
-/* ========================= TABLET ========================= */
+/* ========================= تابلت وايباد ========================= */
 
 @media (min-width: 601px) and (max-width: 1100px) {
     .hero-content h1 { font-size: 38px; }
@@ -1625,7 +1620,7 @@ a {
     .footer-nav a { font-size: 10px; }
 }
 
-/* ========================= MOBILE ========================= */
+/* ========================= جوال ========================= */
 
 @media (max-width: 600px) {
     .hero {
@@ -2113,7 +2108,7 @@ a {
     }
 }
 
-/* very narrow phones */
+
 @media (max-width: 360px) {
     .navbar {
         right: 12px;
@@ -2171,7 +2166,7 @@ a {
     }
 }
 /* =========================================
-   SCROLL ANIMATIONS
+  حركه السكروول
 ========================================= */
 
 .scroll-reveal {
@@ -2187,7 +2182,7 @@ a {
     transform: translateY(0);
 }
 
-/* الصور تدخل بنعومة */
+
 .scroll-reveal img {
     transition: transform 0.9s ease;
 }
@@ -2196,7 +2191,6 @@ a {
     transform: scale(1);
 }
 
-/* احترام إعداد تقليل الحركة */
 @media (prefers-reduced-motion: reduce) {
     .scroll-reveal {
         opacity: 1;
@@ -2206,7 +2200,7 @@ a {
 }
 
 /* =========================
-   JAZEL HUMANITY PAGE
+  صفحه الانسانيه
 ========================= */
 
 .humanity-page-intro,
@@ -2265,8 +2259,6 @@ a {
     line-height: 1.9;
 }
 
-
-/* صور صفحة جازل الإنسانية */
 .humanity-page-image {
     width: 100%;
     height: auto;
@@ -2283,7 +2275,6 @@ a {
     object-fit: contain;
 }
 
-/* صورة المبادرة الثانية - تبقى كما هي */
 .initiative-image {
     width: 100%;
     height: 230px;
@@ -2388,7 +2379,7 @@ a {
     line-height: 1.5;
 }
 
-/* Tablet */
+/* ايباد وتابلت */
 @media (min-width: 601px) and (max-width: 1100px) {
     .humanity-page-intro,
     .humanity-initiative {
@@ -2402,7 +2393,7 @@ a {
     }
 }
 
-/* Mobile */
+/*جوال */
 @media (max-width: 600px) {
     .humanity-page-intro,
     .humanity-initiative {
